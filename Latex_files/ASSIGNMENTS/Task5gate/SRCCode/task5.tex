@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amssymb}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+\begin{document}
+
+\noindent
+\begin{minipage}{0.6\textwidth}
+    \includegraphics[width=0.75\textwidth]{IIITB-COMET-Logo.png}
+\end{minipage}
+\begin{minipage}{0.38\textwidth}
+    \begin{flushright}
+        \textbf{DARSI VAMSI}\newline
+        \textbf{COMET FWC 071}
+    \end{flushright}
+\end{minipage}
+
+\textbf{Q. Consider the minterm list from of a Boolean function F given below.
+\begin{equation*}
+F(P,Q,R,S)=\sum m(0,2,5,7,9,11)+d(3,8,10,12,14)
+\end{equation*}
+Here, $m$ denotes a minterm and $d$ denotes a dont't care term. The number of essential prime implicants of the function $F$ is $\_ \_ \_ \_$.}
+
+Solution:\newline
+
+The given Boolean Function contains the Minterms and Don't Cares.\newline
+
+MinTerms are given as 0,2,5,7,9,11.(These cells Contain logic values 1).\newline
+and Don't Cares are given as\newline
+These cells may be treated either as :\newline
+1(to simplify the function),or \newline
+0 (if not useful).\newline
+
+Constructing a K-Map for the given Function:
+\begin{equation*}
+F(P,Q,R,S)=\sum m(0,2,5,7,9,11)+d(3,8,10,12,14)
+\end{equation*}
+
+\begin{center}
+
+\renewcommand{\arraystretch}{1.8}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+{$PQ$}/{$RS$} & 00 & 01 & 11 & 10 \\
+\hline
+00 &
+1 &
+0 &
+X &
+1 \\
+\hline
+01 &
+0 &
+1 &
+1 &
+0 \\
+\hline
+11 &
+X &
+0 &
+0 &
+X \\
+\hline
+10 &
+X &
+1 &
+1 &
+X \\
+\hline
+\end{tabular}
+
+\end{center}
+
+Essential Prime Implicants:\newline
+
+Essential Prime Implicants are those subcubes (groups) which cover atleast one minterm that can’t be covered by any other prime implicant. Essential prime implicants (EPI) are those prime implicants which always appear in final solution.\newline
+
+Grouping Explanation:
+
+\begin{itemize}
+    \item {$P'QS$} : Group formed using minterms 5 and 7.
+    
+    \item {$Q'S'$} : Group formed using minterms 0, 2 and don't care terms 8, 10.
+    
+    \item {$PQ'$} : Group formed using minterms 9, 11 and don't care terms 8, 10.
+\end{itemize}
+
+\begin{equation*}
+F = P'QS + Q'S' + PQ'
+\end{equation*}
+
+There are three prime implicants $P'QS$, $PQ'$ and $Q'S'$. Also, all of them are essential. Therefore, the number of essential prime implicants of function $F$ is
+3.
+
+\end{document}
