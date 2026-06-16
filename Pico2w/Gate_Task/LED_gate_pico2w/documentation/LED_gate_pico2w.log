@@ -1,0 +1,382 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Termux) (preloaded format=pdflatex 2026.5.26)  16 JUN 2026 19:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**LED_gate_pico2w.tex
+(./LED_gate_pico2w.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-05-15>
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/base/a
+rticle.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/base/s
+ize12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/graphi
+cs-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
+h/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
+h/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
+h/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen153
+))
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
+h/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsmat
+h/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count289
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks19
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks20
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/listin
+gs/listings.sty
+\lst@mode=\count296
+\lst@gtempboxa=\box55
+\lst@token=\toks23
+\lst@length=\count297
+\lst@currlwidth=\dimen162
+\lst@column=\count298
+\lst@pos=\count299
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count300
+\lst@lineno=\count301
+\lst@maxwidth=\dimen165
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/listin
+gs/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/listin
+gs/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count302
+\lst@skipnumbers=\count303
+\lst@framebox=\box56
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/listin
+gs/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/geomet
+ry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/ifte
+x/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/generic/ifte
+x/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count304
+\Gm@cntv=\count305
+\c@Gm@tempcnt=\count306
+\Gm@bindingoffset=\dimen166
+\Gm@wd@mp=\dimen167
+\Gm@odd@mp=\dimen168
+\Gm@even@mp=\dimen169
+\Gm@layoutwidth=\dimen170
+\Gm@layoutheight=\dimen171
+\Gm@layouthoffset=\dimen172
+\Gm@layoutvoffset=\dimen173
+\Gm@dimlist=\toks24
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/l3back
+end/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count307
+) (./LED_gate_pico2w.aux)
+\openout1 = `LED_gate_pico2w.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/context/base
+/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count308
+\scratchdimen=\dimen174
+\scratchbox=\box57
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen175
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks26
+)
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/epstop
+df-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/latexc
+onfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count314
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<IIITB-COMET-Logo.png, id=1, 240.9pt x 75.6426pt>
+File: IIITB-COMET-Logo.png Graphic file (type png)
+<use IIITB-COMET-Logo.png>
+Package pdftex.def Info: IIITB-COMET-Logo.png  used on input line 14.
+(pdftex.def)             Requested size: 203.83762pt x 64.00679pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+
+
+(/data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/tex/latex/amsfon
+ts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (11.1815pt too wide) in paragraph at lines 13--25
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--25
+
+ []
+
+<figure.png, id=3, 604.50844pt x 270.25969pt>
+File: figure.png Graphic file (type png)
+<use figure.png>
+Package pdftex.def Info: figure.png  used on input line 29.
+(pdftex.def)             Requested size: 339.72592pt x 151.88048pt.
+[1
+
+{/data/data/com.termux/files/usr/share/texlive/2026/texmf-var/fonts/map/pdftex/
+updmap/pdftex.map}{/data/data/com.termux/files/usr/share/texlive/2026/texmf-dis
+t/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./IIITB-COMET-Logo.png> <./figure
+.png>]
+Overfull \hbox (175.3821pt too wide) in paragraph at lines 133--133
+ []\OT1/cmtt/m/n/12 https://github.com/earlephilhower/arduino-pico/releases/dow
+nload/global/package_rp2040_index.json[] 
+ []
+
+[2] [3]
+<Led_gate_pico2w.jpeg, id=26, 545.78906pt x 459.21562pt>
+File: Led_gate_pico2w.jpeg Graphic file (type jpg)
+<use Led_gate_pico2w.jpeg>
+Package pdftex.def Info: Led_gate_pico2w.jpeg  used on input line 234.
+(pdftex.def)             Requested size: 294.42636pt x 247.72047pt.
+ [4 <./Led_gate_pico2w.jpeg>] (./LED_gate_pico2w.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-05-15>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4499 strings out of 467340
+ 67387 string characters out of 5401109
+ 483140 words of memory out of 5000000
+ 33571 multiletter control sequences out of 15000+600000
+ 637490 words of font info for 77 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,7n,65p,343b,266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></data/data/com.termux/files/usr/share/texlive/2026
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></data/data/com.termux/fi
+les/usr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</data/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb></data/data/com.termux/files/usr/share/texlive/2026/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></data/data/com.termux/files/u
+sr/share/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></da
+ta/data/com.termux/files/usr/share/texlive/2026/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></data/data/com.termux/files/usr/share/texlive/2026/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></data/data/com.termux/files/usr
+/share/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on LED_gate_pico2w.pdf (4 pages, 224502 bytes).
+PDF statistics:
+ 69 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
