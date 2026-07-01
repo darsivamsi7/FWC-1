@@ -1,0 +1,13 @@
+# Inputs
+set_io A 16
+set_io B 17
+set_io C 18
+
+# Seven Segment Outputs
+set_io segA 20
+set_io segB 21
+set_io segC 22
+set_io segD 23
+set_io segE 25
+set_io segF 26
+set_io segG 27

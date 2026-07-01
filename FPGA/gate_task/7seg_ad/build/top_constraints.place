@@ -1,0 +1,10 @@
+A          3  29  0  # set_io A 16
+B          2  30  0  # set_io B 17
+C          3  30  0  # set_io C 18
+$iopadmap$top.segA   1  31  0  # set_io segA 20
+$iopadmap$top.segB   2  31  0  # set_io segB 21
+$iopadmap$top.segC   3  31  0  # set_io segC 22
+$iopadmap$top.segD   4  32  0  # set_io segD 23
+$iopadmap$top.segE   6  32  0  # set_io segE 25
+$iopadmap$top.segF   8  32  0  # set_io segF 26
+$iopadmap$top.segG  10  32  0  # set_io segG 27

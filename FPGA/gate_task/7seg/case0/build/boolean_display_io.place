@@ -1,0 +1,9 @@
+#Block Name x   y   z    pcf_line
+#--------- --  --  -    ----
+$iopadmap$boolean_display.seg_a   1  31  0  # set_io seg_a 20
+$iopadmap$boolean_display.seg_b   2  31  0  # set_io seg_b 21
+$iopadmap$boolean_display.seg_c   3  31  0  # set_io seg_c 22
+$iopadmap$boolean_display.seg_d   4  32  0  # set_io seg_d 23
+$iopadmap$boolean_display.seg_e   6  32  0  # set_io seg_e 25
+$iopadmap$boolean_display.seg_f   8  32  0  # set_io seg_f 26
+$iopadmap$boolean_display.seg_g  10  32  0  # set_io seg_g 27

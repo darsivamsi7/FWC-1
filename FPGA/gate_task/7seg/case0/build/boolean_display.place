@@ -1,0 +1,14 @@
+Netlist_File: boolean_display.net Netlist_ID: SHA256:3a4499e66397da728fcadf8e94d4053b1cfb7bdb6eb54eae090bd52116501021
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$iopadmap$boolean_display.seg_a	1	31	0	#0
+$iopadmap$boolean_display.seg_b	2	31	0	#1
+$iopadmap$boolean_display.seg_c	3	31	0	#2
+$iopadmap$boolean_display.seg_d	4	32	0	#3
+$iopadmap$boolean_display.seg_e	6	32	0	#4
+$iopadmap$boolean_display.seg_f	8	32	0	#5
+$iopadmap$boolean_display.seg_g	10	32	0	#6
+$false		3	1	0	#7
+$true		2	1	0	#8

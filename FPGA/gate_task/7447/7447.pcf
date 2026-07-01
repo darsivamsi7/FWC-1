@@ -1,0 +1,7 @@
+set_io A 16
+set_io B 17
+set_io C 18
+set_io D0 20
+set_io D1 21
+set_io D2 22
+set_io D3 23

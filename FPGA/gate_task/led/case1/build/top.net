@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<block name="top.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ff45ae019adfd8ddc9651aa485da7d1cc80afac7f587a182516f1773344b8923" atom_netlist_id="SHA256:e47334dbee96f20de9589b4ad46905d38163b4aee5cfa95f973227d6b8f6b957">
+	<inputs></inputs>
+	<outputs>out:led</outputs>
+	<clocks></clocks>
+	<block name="$iopadmap$top.led" instance="PB-SDIOMUX[0]" mode="default">
+		<inputs>
+			<port name="SDIOMUX0_IE">$true</port>
+			<port name="SDIOMUX0_OE">$false</port>
+			<port name="SDIOMUX0_OQI">$true</port>
+		</inputs>
+		<outputs>
+			<port name="SDIOMUX0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$top.led" instance="SDIOMUX[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-SDIOMUX.SDIOMUX0_IE[0]-&gt;PB-SDIOMUX.SDIOMUX0_IE_to_SDIOMUX[0].IE</port>
+				<port name="OE">PB-SDIOMUX.SDIOMUX0_OE[0]-&gt;PB-SDIOMUX.SDIOMUX0_OE_to_SDIOMUX[0].OE</port>
+				<port name="OQI">PB-SDIOMUX.SDIOMUX0_OQI[0]-&gt;PB-SDIOMUX.SDIOMUX0_OQI_to_SDIOMUX[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$top.led" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">SDIOMUX.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="OE">SDIOMUX.OE[0]-&gt;OUTPUT-OE</port>
+					<port name="OQI">SDIOMUX.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="out:led" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">sdiomux[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+				<block name="$iopadmap$top.led" instance="sdiomux[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:64.20-71.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="I_EN">OUTPUT.IE[0]-&gt;sdiomux-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;sdiomux-O_DAT</port>
+						<port name="O_EN">OUTPUT.OE[0]-&gt;sdiomux-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">led</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$false" instance="PB-SYN_GND[1]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="GND0_GND">GND[0].GND[0]-&gt;GND[0].GND_to_PB-SYN_GND.GND0_GND</port>
+		</outputs>
+		<clocks />
+		<block name="$false" instance="GND[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="GND">$false</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="$true" instance="PB-SYN_VCC[2]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="VCC0_VCC">VCC[0].VCC[0]-&gt;VCC[0].VCC_to_PB-SYN_VCC.VCC0_VCC</port>
+		</outputs>
+		<clocks />
+		<block name="$true" instance="VCC[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="VCC">$true</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

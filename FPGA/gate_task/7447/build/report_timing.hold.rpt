@@ -1,0 +1,37 @@
+#Timing report of worst 1 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: A.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:D0.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+A.inpad[0] (.input)                                                 0.000     0.000
+$iopadmap$top.A.I_PAD_$inp[0] (SDIOMUX_CELL)                        0.000     0.000
+$iopadmap$top.A.I_DAT[0] (SDIOMUX_CELL)                            11.146    11.146
+D0_LUT3_O.t_frag.XAB[0] (T_FRAG)                                   10.777    21.923
+D0_LUT3_O.t_frag.XZ[0] (T_FRAG)                                     0.909    22.832
+$iopadmap$top.D0.O_DAT[0] (SDIOMUX_CELL)                            7.230    30.062
+$iopadmap$top.D0.O_PAD_$out[0] (SDIOMUX_CELL)                       8.931    38.993
+out:D0.outpad[0] (.output)                                          0.000    38.993
+data arrival time                                                            38.993
+
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                            38.993
+-----------------------------------------------------------------------------------
+slack (MET)                                                                  38.993
+
+
+#End of timing report
