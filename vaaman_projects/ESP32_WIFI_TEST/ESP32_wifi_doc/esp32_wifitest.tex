@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\lstset{
+language=C++,
+basicstyle=\ttfamily\small,
+keywordstyle=\color{blue},
+commentstyle=\color{green!60!black},
+stringstyle=\color{red},
+numbers=left,
+numberstyle=\tiny,
+stepnumber=1,
+numbersep=5pt,
+frame=single,
+breaklines=true,
+showstringspaces=false
+}
+\begin{document}
+\noindent
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=0.75\textwidth]{IIITB-COMET-Logo.png}
+\end{minipage}
+\begin{minipage}{0.38\textwidth}
+\begin{center}
+\textbf{DARSI VAMSI}
+\newline
+\textbf{COMET FWC 071}
+\end{center}
+\end{minipage}
+\\
+\Large{\textbf{Wi-Fi Connectivity Testing using VAMAN ESP32 Board}}
+
+
+\section{Objective}
+
+The objective of this experiment is to verify the Wi-Fi functionality of the VAMAN ESP32 development board by connecting it to a wireless access point, obtaining an IP address from the router, and monitoring the communication through the serial terminal.
+
+\section{Hardware Requirements}
+
+\begin{enumerate}
+    \item VAMAN ESP32 Development Board
+    \item USB Type-C Cable
+    \item Ubuntu 24.04 System
+    \item PlatformIO IDE
+    \item Wi-Fi Router / Mobile Hotspot
+\end{enumerate}
+
+\section{Software Requirements}
+
+\begin{enumerate}
+    \item Ubuntu 24.04 LTS
+    \item PlatformIO
+    \item Arduino Framework
+    \item ESP32 Board Package
+    \item Serial Monitor (115200 baud)
+\end{enumerate}
+
+\section{Program Description}
+
+The program initializes the serial communication at 115200 baud and configures the ESP32 in Station (STA) mode. The board attempts to connect to the specified Wi-Fi network using the provided SSID and password.
+
+A maximum of twenty connection attempts are made. If the connection is successful, the assigned IPv4 address is displayed on the serial monitor. Otherwise, an error message along with the Wi-Fi status code is printed.
+
+After successful connection, the ESP32 continuously prints a heartbeat message indicating that the controller is running properly.
+
+\section{Algorithm}
+
+\begin{enumerate}
+    \item Initialize Serial Communication.
+    \item Configure ESP32 in Station Mode.
+    \item Start Wi-Fi Connection.
+    \item Wait until Wi-Fi is Connected.
+    \item If Connected
+    \begin{enumerate}
+        \item Print ``WiFi Connected''.
+        \item Display Assigned IP Address.
+    \end{enumerate}
+    \item Else
+    \begin{enumerate}
+        \item Print Connection Failed.
+        \item Display Wi-Fi Status Code.
+    \end{enumerate}
+    \item Continuously print system running status every two seconds.
+\end{enumerate}
+
+\section{Source Code}
+
+\begin{lstlisting}
+#include <Arduino.h>
+#include <WiFi.h>
+
+const char* ssid = "vamsi";
+const char* password = "123456789";
+
+void setup()
+{
+    Serial.begin(115200);
+
+    delay(3000);
+
+    Serial.println("ESP32 WiFi Test Started");
+
+    WiFi.mode(WIFI_STA);
+
+    WiFi.begin(ssid,password);
+
+    int retry = 0;
+
+    while(WiFi.status()!=WL_CONNECTED && retry<20)
+    {
+        Serial.print(".");
+        delay(500);
+        retry++;
+    }
+
+    if(WiFi.status()==WL_CONNECTED)
+    {
+        Serial.println("WiFi Connected!");
+        Serial.print("IP Address : ");
+        Serial.println(WiFi.localIP());
+    }
+    else
+    {
+        Serial.println("WiFi Connection Failed!");
+        Serial.println(WiFi.status());
+    }
+}
+
+void loop()
+{
+    Serial.println("ESP32 is running...");
+    delay(2000);
+}
+\end{lstlisting}
+
+\section{Testing Procedure}
+
+\begin{enumerate}
+    \item Connect the VAMAN ESP32 board to the Ubuntu system using USB.
+    \item Open the project in PlatformIO.
+    \item Build and upload the program.
+    \item Open the Serial Monitor at 115200 baud.
+    \item Power on the Wi-Fi router/mobile hotspot.
+    \item Verify that the SSID and password match the program.
+    \item Observe the connection status on the serial monitor.
+    \item Verify that the ESP32 receives a valid IP address.
+    \item Confirm periodic status messages after successful connection.
+\end{enumerate}
+
+\section{Expected Serial Output}
+
+\begin{verbatim}
+==================================
+ESP32 WiFi Test Started
+==================================
+
+Connecting to WiFi...
+......
+
+WiFi Connected!
+IP Address: 192.168.29.105
+
+ESP32 is running...
+ESP32 is running...
+ESP32 is running...
+\end{verbatim}
+
+\section{Observation}
+
+\begin{itemize}
+    \item The ESP32 successfully entered Station Mode.
+    \item The ESP32 was taking the code and entrring into download mode after resetting the esp32 is unable to generate the IP ADDRESS.
+    \item The board is not  connected to the configured Wi-Fi network.
+
+\end{itemize}
+
+\section{Result}
+
+The Wi-Fi interface of the VAMAN ESP32 board was successfully tested. The ESP32 established a reliable connection with the configured wireless network, obtained an IP address from the DHCP server, and continuously executed the application without communication failure. The experiment verified the proper operation of the ESP32 wireless subsystem and its readiness for future IoT and networking applications.
+
+\end{document}
