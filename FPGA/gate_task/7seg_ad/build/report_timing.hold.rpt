@@ -1,0 +1,133 @@
+#Timing report of worst 4 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: C.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:segA.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                                  Incr      Path
+-------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                    0.000     0.000
+clock source latency                                                  0.000     0.000
+input external delay                                                  0.000     0.000
+C.inpad[0] (.input)                                                   0.000     0.000
+$iopadmap$top.C.I_PAD_$inp[0] (SDIOMUX_CELL)                          0.000     0.000
+$iopadmap$top.C.I_DAT[0] (SDIOMUX_CELL)                              11.146    11.146
+segA_LUT3_O.t_frag.XB2[0] (T_FRAG)                                    2.687    13.833
+segA_LUT3_O.t_frag.XZ[0] (T_FRAG)                                     1.378    15.212
+$iopadmap$top.segA.O_DAT[0] (SDIOMUX_CELL)                            3.685    18.897
+$iopadmap$top.segA.O_PAD_$out[0] (SDIOMUX_CELL)                       8.931    27.828
+out:segA.outpad[0] (.output)                                          0.000    27.828
+data arrival time                                                              27.828
+
+clock virtual_io_clock (rise edge)                                    0.000     0.000
+clock source latency                                                  0.000     0.000
+clock uncertainty                                                     0.000     0.000
+output external delay                                                 0.000     0.000
+data required time                                                              0.000
+-------------------------------------------------------------------------------------
+data required time                                                             -0.000
+data arrival time                                                              27.828
+-------------------------------------------------------------------------------------
+slack (MET)                                                                    27.828
+
+
+#Path 2
+Startpoint: C.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:segD.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+C.inpad[0] (.input)                                                 0.000     0.000
+$iopadmap$top.C.I_PAD_$inp[0] (SDIOMUX_CELL)                        0.000     0.000
+$iopadmap$top.C.I_DAT[0] (SDIOMUX_CELL)                            11.146    11.146
+segA_LUT3_O.t_frag.XB2[0] (T_FRAG)                                  2.687    13.833
+segA_LUT3_O.t_frag.XZ[0] (T_FRAG)                                   1.378    15.212
+$iopadmap$top.segD.O_DAT[0] (BIDIR_CELL)                            3.205    18.416
+$iopadmap$top.segD.O_PAD_$out[0] (BIDIR_CELL)                       9.726    28.142
+out:segD.outpad[0] (.output)                                        0.000    28.142
+data arrival time                                                            28.142
+
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                            28.142
+-----------------------------------------------------------------------------------
+slack (MET)                                                                  28.142
+
+
+#Path 3
+Startpoint: C.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:segE.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+C.inpad[0] (.input)                                                 0.000     0.000
+$iopadmap$top.C.I_PAD_$inp[0] (SDIOMUX_CELL)                        0.000     0.000
+$iopadmap$top.C.I_DAT[0] (SDIOMUX_CELL)                            11.146    11.146
+segA_LUT3_O.t_frag.XB2[0] (T_FRAG)                                  2.687    13.833
+segA_LUT3_O.t_frag.XZ[0] (T_FRAG)                                   1.378    15.212
+$iopadmap$top.segE.O_DAT[0] (BIDIR_CELL)                            4.474    19.686
+$iopadmap$top.segE.O_PAD_$out[0] (BIDIR_CELL)                       9.726    29.412
+out:segE.outpad[0] (.output)                                        0.000    29.412
+data arrival time                                                            29.412
+
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                            29.412
+-----------------------------------------------------------------------------------
+slack (MET)                                                                  29.412
+
+
+#Path 4
+Startpoint: C.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:segF.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                                Incr      Path
+-----------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+input external delay                                                0.000     0.000
+C.inpad[0] (.input)                                                 0.000     0.000
+$iopadmap$top.C.I_PAD_$inp[0] (SDIOMUX_CELL)                        0.000     0.000
+$iopadmap$top.C.I_DAT[0] (SDIOMUX_CELL)                            11.146    11.146
+segA_LUT3_O.t_frag.XB2[0] (T_FRAG)                                  2.687    13.833
+segA_LUT3_O.t_frag.XZ[0] (T_FRAG)                                   1.378    15.212
+$iopadmap$top.segF.O_DAT[0] (BIDIR_CELL)                            5.335    20.546
+$iopadmap$top.segF.O_PAD_$out[0] (BIDIR_CELL)                       9.726    30.272
+out:segF.outpad[0] (.output)                                        0.000    30.272
+data arrival time                                                            30.272
+
+clock virtual_io_clock (rise edge)                                  0.000     0.000
+clock source latency                                                0.000     0.000
+clock uncertainty                                                   0.000     0.000
+output external delay                                               0.000     0.000
+data required time                                                            0.000
+-----------------------------------------------------------------------------------
+data required time                                                           -0.000
+data arrival time                                                            30.272
+-----------------------------------------------------------------------------------
+slack (MET)                                                                  30.272
+
+
+#End of timing report

@@ -1,0 +1,133 @@
+Placement_File: top.place Placement_ID: SHA256:0f73e66ea06c31b6f39800b10c5fde6e10d1d1f87a3adb63e19f43147d503605
+Array size: 39 x 35 logic blocks.
+
+Routing:
+
+Net 0 ($true)
+
+Node:	636	SOURCE (2,1)  Class: 0  Switch: 0
+Node:	637	  OPIN (2,1)  Pin: 0   PB-SYN_VCC.VCC0_VCC[0] Switch: 0
+Node:	51600	 CHANY (2,1)  Track: 2  Switch: 0
+Node:	51603	 CHANX (3,0)  Track: 1  Switch: 0
+Node:	51737	 CHANY (3,1)  Track: 117  Switch: 0
+Node:	51738	 CHANY (3,2)  Track: 121  Switch: 0
+Node:	51739	 CHANY (3,3)  Track: 121  Switch: 0
+Node:	51740	 CHANY (3,4)  Track: 842  Switch: 0
+Node:	51741	 CHANY (3,5)  Track: 847  Switch: 0
+Node:	51742	 CHANY (3,6)  Track: 843  Switch: 0
+Node:	51743	 CHANY (3,7)  Track: 834  Switch: 0
+Node:	51744	 CHANY (3,8)  Track: 825  Switch: 0
+Node:	51745	 CHANY (3,9)  Track: 820  Switch: 0
+Node:	51746	 CHANY (3,10)  Track: 813  Switch: 0
+Node:	51747	 CHANY (3,11)  Track: 825  Switch: 0
+Node:	51748	 CHANY (3,12)  Track: 816  Switch: 0
+Node:	51749	 CHANY (3,13)  Track: 799  Switch: 0
+Node:	51750	 CHANY (3,14)  Track: 787  Switch: 0
+Node:	51751	 CHANY (3,15)  Track: 775  Switch: 0
+Node:	51752	 CHANY (3,16)  Track: 763  Switch: 0
+Node:	51753	 CHANY (3,17)  Track: 751  Switch: 0
+Node:	51754	 CHANY (3,18)  Track: 733  Switch: 0
+Node:	51755	 CHANY (3,19)  Track: 733  Switch: 0
+Node:	51756	 CHANY (3,20)  Track: 733  Switch: 0
+Node:	51757	 CHANY (3,21)  Track: 733  Switch: 0
+Node:	51758	 CHANY (3,22)  Track: 733  Switch: 0
+Node:	51759	 CHANY (3,23)  Track: 733  Switch: 0
+Node:	51760	 CHANY (3,24)  Track: 733  Switch: 0
+Node:	51761	 CHANY (3,25)  Track: 738  Switch: 0
+Node:	51762	 CHANY (3,26)  Track: 738  Switch: 0
+Node:	51763	 CHANY (3,27)  Track: 741  Switch: 0
+Node:	51764	 CHANY (3,28)  Track: 742  Switch: 0
+Node:	51765	 CHANY (3,29)  Track: 739  Switch: 0
+Node:	1394603	 CHANX (3,29)  Track: 28  Switch: 0
+Node:	1270855	 CHANY (3,29)  Track: 150  Switch: 0
+Node:	1271007	 CHANX (3,29)  Track: 58  Switch: 0
+Node:	1271008	 CHANY (3,29)  Track: 52  Switch: 2
+Node:	1269941	 CHANX (3,29)  Track: 476  Switch: 0
+Node:	1269939	 CHANY (3,29)  Track: 701  Switch: 0
+Node:	1269940	 CHANX (3,29)  Track: 477  Switch: 0
+Node:	1269938	 CHANY (3,29)  Track: 702  Switch: 0
+Node:	1270757	 CHANX (3,29)  Track: 153  Switch: 2
+Node:	1270433	 CHANY (3,29)  Track: 390  Switch: 63
+Node:	1270426	 CHANX (3,29)  Track: 295  Switch: 0
+Node:	1270427	 CHANY (3,29)  Track: 396  Switch: 168
+Node:	1270425	 CHANX (3,29)  Track: 296  Switch: 0
+Node:	1270635	 CHANY (3,29)  Track: 247  Switch: 2
+Node:	1270040	 CHANX (3,29)  Track: 407  Switch: 27
+Node:	1270038	 CHANY (3,29)  Track: 671  Switch: 0
+Node:	1270039	 CHANX (3,29)  Track: 408  Switch: 0
+Node:	1270037	 CHANY (3,29)  Track: 672  Switch: 0
+Node:	1386203	 CHANX (3,29)  Track: 36  Switch: 0
+Node:	700	  IPIN (3,29)  Pad: 0  Switch: 0
+Node:	696	  SINK (3,29)  Pad: 0  Switch: -1 Net_pin_index: 2
+Node:	1269938	 CHANY (3,29)  Track: 702  Switch: 0
+Node:	1270809	 CHANX (3,29)  Track: 122  Switch: 2
+Node:	1270415	 CHANY (3,29)  Track: 404  Switch: 62
+Node:	1270408	 CHANX (3,29)  Track: 299  Switch: 0
+Node:	1270409	 CHANY (3,29)  Track: 410  Switch: 168
+Node:	1270407	 CHANX (3,29)  Track: 300  Switch: 0
+Node:	1270765	 CHANY (3,29)  Track: 204  Switch: 2
+Node:	1270004	 CHANX (3,29)  Track: 431  Switch: 259
+Node:	1270002	 CHANY (3,29)  Track: 683  Switch: 0
+Node:	1270003	 CHANX (3,29)  Track: 432  Switch: 0
+Node:	1270001	 CHANY (3,29)  Track: 684  Switch: 0
+Node:	1386200	 CHANX (3,29)  Track: 37  Switch: 0
+Node:	701	  IPIN (3,29)  Pad: 1  Switch: 0
+Node:	697	  SINK (3,29)  Pad: 1  Switch: -1 Net_pin_index: 1
+
+
+Net 1 ($false)
+
+Node:	678	SOURCE (3,1)  Class: 0  Switch: 0
+Node:	679	  OPIN (3,1)  Pin: 0   PB-SYN_GND.GND0_GND[0] Switch: 0
+Node:	52892	 CHANY (3,1)  Track: 116  Switch: 0
+Node:	52893	 CHANX (3,0)  Track: 0  Switch: 0
+Node:	53029	 CHANY (3,1)  Track: 115  Switch: 0
+Node:	53030	 CHANY (3,2)  Track: 120  Switch: 0
+Node:	53031	 CHANY (3,3)  Track: 120  Switch: 0
+Node:	53032	 CHANY (3,4)  Track: 841  Switch: 0
+Node:	53033	 CHANY (3,5)  Track: 846  Switch: 0
+Node:	53034	 CHANY (3,6)  Track: 842  Switch: 0
+Node:	53035	 CHANY (3,7)  Track: 833  Switch: 0
+Node:	53036	 CHANY (3,8)  Track: 824  Switch: 0
+Node:	53037	 CHANY (3,9)  Track: 819  Switch: 0
+Node:	53038	 CHANY (3,10)  Track: 812  Switch: 0
+Node:	53039	 CHANY (3,11)  Track: 824  Switch: 0
+Node:	53040	 CHANY (3,12)  Track: 815  Switch: 0
+Node:	53041	 CHANY (3,13)  Track: 798  Switch: 0
+Node:	53042	 CHANY (3,14)  Track: 786  Switch: 0
+Node:	53043	 CHANY (3,15)  Track: 774  Switch: 0
+Node:	53044	 CHANY (3,16)  Track: 762  Switch: 0
+Node:	53045	 CHANY (3,17)  Track: 750  Switch: 0
+Node:	53046	 CHANY (3,18)  Track: 732  Switch: 0
+Node:	53047	 CHANY (3,19)  Track: 732  Switch: 0
+Node:	53048	 CHANY (3,20)  Track: 732  Switch: 0
+Node:	53049	 CHANY (3,21)  Track: 732  Switch: 0
+Node:	53050	 CHANY (3,22)  Track: 732  Switch: 0
+Node:	53051	 CHANY (3,23)  Track: 732  Switch: 0
+Node:	53052	 CHANY (3,24)  Track: 732  Switch: 0
+Node:	53053	 CHANY (3,25)  Track: 737  Switch: 0
+Node:	53054	 CHANY (3,26)  Track: 737  Switch: 0
+Node:	53055	 CHANY (3,27)  Track: 740  Switch: 0
+Node:	53056	 CHANY (3,28)  Track: 741  Switch: 0
+Node:	53057	 CHANY (3,29)  Track: 738  Switch: 0
+Node:	1394602	 CHANX (3,29)  Track: 29  Switch: 0
+Node:	1270829	 CHANY (3,29)  Track: 176  Switch: 0
+Node:	1270895	 CHANX (3,29)  Track: 101  Switch: 0
+Node:	1270896	 CHANY (3,29)  Track: 121  Switch: 2
+Node:	1269861	 CHANX (3,29)  Track: 538  Switch: 0
+Node:	1269858	 CHANY (3,29)  Track: 719  Switch: 0
+Node:	1269859	 CHANX (3,29)  Track: 540  Switch: 277
+Node:	1269857	 CHANY (3,29)  Track: 720  Switch: 0
+Node:	1270605	 CHANX (3,29)  Track: 256  Switch: 2
+Node:	1270448	 CHANY (3,29)  Track: 379  Switch: 9
+Node:	1270444	 CHANX (3,29)  Track: 291  Switch: 0
+Node:	1270445	 CHANY (3,29)  Track: 382  Switch: 168
+Node:	1270443	 CHANX (3,29)  Track: 292  Switch: 0
+Node:	1270786	 CHANY (3,29)  Track: 195  Switch: 2
+Node:	1270076	 CHANX (3,29)  Track: 383  Switch: 248
+Node:	1270074	 CHANY (3,29)  Track: 659  Switch: 0
+Node:	1270075	 CHANX (3,29)  Track: 384  Switch: 0
+Node:	1270073	 CHANY (3,29)  Track: 660  Switch: 0
+Node:	1386206	 CHANX (3,29)  Track: 35  Switch: 0
+Node:	702	  IPIN (3,29)  Pad: 2  Switch: 0
+Node:	698	  SINK (3,29)  Pad: 2  Switch: -1 Net_pin_index: 1

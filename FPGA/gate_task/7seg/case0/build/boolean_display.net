@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<block name="boolean_display.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:ff45ae019adfd8ddc9651aa485da7d1cc80afac7f587a182516f1773344b8923" atom_netlist_id="SHA256:972b05fbaa294432735ff0093581b1ed11bbe271d260ccde5513a30fcfd4f395">
+	<inputs></inputs>
+	<outputs>out:seg_a out:seg_b out:seg_c out:seg_d out:seg_e out:seg_f out:seg_g</outputs>
+	<clocks></clocks>
+	<block name="$iopadmap$boolean_display.seg_a" instance="PB-SDIOMUX[0]" mode="default">
+		<inputs>
+			<port name="SDIOMUX0_IE">$true</port>
+			<port name="SDIOMUX0_OE">$false</port>
+			<port name="SDIOMUX0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="SDIOMUX0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_a" instance="SDIOMUX[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-SDIOMUX.SDIOMUX0_IE[0]-&gt;PB-SDIOMUX.SDIOMUX0_IE_to_SDIOMUX[0].IE</port>
+				<port name="OE">PB-SDIOMUX.SDIOMUX0_OE[0]-&gt;PB-SDIOMUX.SDIOMUX0_OE_to_SDIOMUX[0].OE</port>
+				<port name="OQI">PB-SDIOMUX.SDIOMUX0_OQI[0]-&gt;PB-SDIOMUX.SDIOMUX0_OQI_to_SDIOMUX[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$boolean_display.seg_a" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">SDIOMUX.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="OE">SDIOMUX.OE[0]-&gt;OUTPUT-OE</port>
+					<port name="OQI">SDIOMUX.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="out:seg_a" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">sdiomux[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+				<block name="$iopadmap$boolean_display.seg_a" instance="sdiomux[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:64.20-71.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="I_EN">OUTPUT.IE[0]-&gt;sdiomux-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;sdiomux-O_DAT</port>
+						<port name="O_EN">OUTPUT.OE[0]-&gt;sdiomux-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_a</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_b" instance="PB-SDIOMUX[1]" mode="default">
+		<inputs>
+			<port name="SDIOMUX0_IE">$true</port>
+			<port name="SDIOMUX0_OE">$false</port>
+			<port name="SDIOMUX0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="SDIOMUX0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_b" instance="SDIOMUX[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-SDIOMUX.SDIOMUX0_IE[0]-&gt;PB-SDIOMUX.SDIOMUX0_IE_to_SDIOMUX[0].IE</port>
+				<port name="OE">PB-SDIOMUX.SDIOMUX0_OE[0]-&gt;PB-SDIOMUX.SDIOMUX0_OE_to_SDIOMUX[0].OE</port>
+				<port name="OQI">PB-SDIOMUX.SDIOMUX0_OQI[0]-&gt;PB-SDIOMUX.SDIOMUX0_OQI_to_SDIOMUX[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$boolean_display.seg_b" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">SDIOMUX.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="OE">SDIOMUX.OE[0]-&gt;OUTPUT-OE</port>
+					<port name="OQI">SDIOMUX.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="out:seg_b" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">sdiomux[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+				<block name="$iopadmap$boolean_display.seg_b" instance="sdiomux[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:64.20-71.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="I_EN">OUTPUT.IE[0]-&gt;sdiomux-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;sdiomux-O_DAT</port>
+						<port name="O_EN">OUTPUT.OE[0]-&gt;sdiomux-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_b</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_c" instance="PB-SDIOMUX[2]" mode="default">
+		<inputs>
+			<port name="SDIOMUX0_IE">$true</port>
+			<port name="SDIOMUX0_OE">$false</port>
+			<port name="SDIOMUX0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="SDIOMUX0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_c" instance="SDIOMUX[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-SDIOMUX.SDIOMUX0_IE[0]-&gt;PB-SDIOMUX.SDIOMUX0_IE_to_SDIOMUX[0].IE</port>
+				<port name="OE">PB-SDIOMUX.SDIOMUX0_OE[0]-&gt;PB-SDIOMUX.SDIOMUX0_OE_to_SDIOMUX[0].OE</port>
+				<port name="OQI">PB-SDIOMUX.SDIOMUX0_OQI[0]-&gt;PB-SDIOMUX.SDIOMUX0_OQI_to_SDIOMUX[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks />
+			<block name="$iopadmap$boolean_display.seg_c" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">SDIOMUX.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="OE">SDIOMUX.OE[0]-&gt;OUTPUT-OE</port>
+					<port name="OQI">SDIOMUX.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks />
+				<block name="out:seg_c" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">sdiomux[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+				<block name="$iopadmap$boolean_display.seg_c" instance="sdiomux[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:64.20-71.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters />
+					<inputs>
+						<port name="I_EN">OUTPUT.IE[0]-&gt;sdiomux-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;sdiomux-O_DAT</port>
+						<port name="O_EN">OUTPUT.OE[0]-&gt;sdiomux-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_c</port>
+					</outputs>
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_d" instance="PB-BIDIR[3]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_d" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$boolean_display.seg_d" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$boolean_display.seg_d" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_d</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:seg_d" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_e" instance="PB-BIDIR[4]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_e" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$boolean_display.seg_e" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$boolean_display.seg_e" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_e</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:seg_e" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_f" instance="PB-BIDIR[5]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$false</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_f" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$boolean_display.seg_f" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$boolean_display.seg_f" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_f</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:seg_f" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$iopadmap$boolean_display.seg_g" instance="PB-BIDIR[6]" mode="default">
+		<inputs>
+			<port name="BIDIR0_IE">$true</port>
+			<port name="BIDIR0_INEN">$false</port>
+			<port name="BIDIR0_IQC">open</port>
+			<port name="BIDIR0_IQE">open</port>
+			<port name="BIDIR0_IQIN">open</port>
+			<port name="BIDIR0_IQR">open</port>
+			<port name="BIDIR0_OQE">open</port>
+			<port name="BIDIR0_OQI">$true</port>
+		</inputs>
+		<outputs>
+			<port name="BIDIR0_IQZ">open</port>
+			<port name="BIDIR0_IZ">open</port>
+		</outputs>
+		<clocks />
+		<block name="$iopadmap$boolean_display.seg_g" instance="BIDIR[0]" mode="OUTPUT">
+			<inputs>
+				<port name="IE">PB-BIDIR.BIDIR0_IE[0]-&gt;PB-BIDIR.BIDIR0_IE_to_BIDIR[0].IE</port>
+				<port name="INEN">PB-BIDIR.BIDIR0_INEN[0]-&gt;PB-BIDIR.BIDIR0_INEN_to_BIDIR[0].INEN</port>
+				<port name="IQE">open</port>
+				<port name="IQIN">open</port>
+				<port name="IQR">open</port>
+				<port name="OQE">open</port>
+				<port name="OQI">PB-BIDIR.BIDIR0_OQI[0]-&gt;PB-BIDIR.BIDIR0_OQI_to_BIDIR[0].OQI</port>
+			</inputs>
+			<outputs>
+				<port name="IQZ">open</port>
+				<port name="IZ">open</port>
+			</outputs>
+			<clocks>
+				<port name="IQC">open</port>
+			</clocks>
+			<block name="$iopadmap$boolean_display.seg_g" instance="OUTPUT[0]" mode="default">
+				<inputs>
+					<port name="IE">BIDIR.IE[0]-&gt;OUTPUT-IE</port>
+					<port name="INEN">BIDIR.INEN[0]-&gt;OUTPUT-INEN</port>
+					<port name="IQE">open</port>
+					<port name="IQIN">open</port>
+					<port name="IQR">open</port>
+					<port name="OQE">open</port>
+					<port name="OQI">BIDIR.OQI[0]-&gt;OUTPUT-OQI</port>
+				</inputs>
+				<outputs>
+					<port name="IQZ">open</port>
+					<port name="IZ">open</port>
+				</outputs>
+				<clocks>
+					<port name="IQC">open</port>
+				</clocks>
+				<block name="$iopadmap$boolean_display.seg_g" instance="bidir[0]">
+					<attributes>
+						<attribute name="src">"/root/symbiflow/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v:81.9-88.8"</attribute>
+						<attribute name="module_not_derived">00000000000000000000000000000001</attribute>
+					</attributes>
+					<parameters>
+						<parameter name="OSEL">1</parameter>
+						<parameter name="WPD">0</parameter>
+						<parameter name="FIXHOLD">0</parameter>
+						<parameter name="ESEL">1</parameter>
+						<parameter name="DS">0</parameter>
+					</parameters>
+					<inputs>
+						<port name="I_EN">OUTPUT.INEN[0]-&gt;bidir-I_EN</port>
+						<port name="I_PAD_$inp">open</port>
+						<port name="O_DAT">OUTPUT.OQI[0]-&gt;bidir-O_DAT</port>
+						<port name="O_EN">OUTPUT.IE[0]-&gt;bidir-O_EN</port>
+					</inputs>
+					<outputs>
+						<port name="I_DAT">open</port>
+						<port name="O_PAD_$out">seg_g</port>
+					</outputs>
+					<clocks />
+				</block>
+				<block name="out:seg_g" instance="outpad[0]">
+					<attributes />
+					<parameters />
+					<inputs>
+						<port name="outpad">bidir[0].O_PAD_$out[0]-&gt;outpad-outpad</port>
+					</inputs>
+					<outputs />
+					<clocks />
+				</block>
+			</block>
+		</block>
+	</block>
+	<block name="$false" instance="PB-SYN_GND[7]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="GND0_GND">GND[0].GND[0]-&gt;GND[0].GND_to_PB-SYN_GND.GND0_GND</port>
+		</outputs>
+		<clocks />
+		<block name="$false" instance="GND[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="GND">$false</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="$true" instance="PB-SYN_VCC[8]" mode="default">
+		<inputs />
+		<outputs>
+			<port name="VCC0_VCC">VCC[0].VCC[0]-&gt;VCC[0].VCC_to_PB-SYN_VCC.VCC0_VCC</port>
+		</outputs>
+		<clocks />
+		<block name="$true" instance="VCC[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="VCC">$true</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

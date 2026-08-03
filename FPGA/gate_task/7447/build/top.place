@@ -1,0 +1,15 @@
+Netlist_File: top.net Netlist_ID: SHA256:e4e2eef8da8cbf598f650d5f632d767fd89ebcfcd085f387fab14792552186c3
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+D0_LUT3_O.t_frag	14	25	0	#0
+$iopadmap$top.D0	1	31	0	#1
+C		3	30	0	#2
+$iopadmap$top.D1	2	31	0	#3
+$iopadmap$top.D2	3	31	0	#4
+$iopadmap$top.D3	4	32	0	#5
+B		2	30	0	#6
+A		3	29	0	#7
+$false		3	1	0	#8
+$true		2	1	0	#9

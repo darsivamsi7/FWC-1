@@ -1,0 +1,8 @@
+Netlist_File: top.net Netlist_ID: SHA256:2c154526e1c653d6677febbf077bd8299dac6ca3310732cc8bdea732702da26d
+Array size: 39 x 35 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+$iopadmap$top.led	3	29	0	#0
+$false		3	1	0	#1
+$true		2	1	0	#2

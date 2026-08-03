@@ -1,0 +1,7 @@
+set_io seg_a 20
+set_io seg_b 21
+set_io seg_c 22
+set_io seg_d 23
+set_io seg_e 25
+set_io seg_f 26
+set_io seg_g 27
