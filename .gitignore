@@ -1,0 +1,23 @@
+# Build files
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# PlatformIO
+.pio/
+.vscode/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS
+.DS_Store
+Thumbs.db
